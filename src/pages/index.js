@@ -163,7 +163,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+      {/* <Image /> */}
       Toooo dfsf
     </div>
     <Link to="/demo-1/">Go to Demo 1</Link> <br />
