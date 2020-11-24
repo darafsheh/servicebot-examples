@@ -1,13 +1,9 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link } from "gatsby"
 
-import Sidebar from "../components/sidebar"
-import SEO from "../components/seo"
-const IndexPage = () => (
-  <>
-    <SEO title="Home" />
-    <div class="h-screen bg-white overflow-hidden flex">
-      <Sidebar />
+const Dashboard = () => {
+  return (
+    <>
       <div className="flex flex-col w-0 flex-1 overflow-hidden">
         <div className="md:hidden pl-1 pt-1 sm:pl-3 sm:pt-3">
           <button className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -50,16 +46,8 @@ const IndexPage = () => (
           </div>
         </main>
       </div>
-    </div>
-    {/* Static sidebar for desktop */}
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      {/* <Image /> */}
-      Toooo dfsf
-    </div>
-    <Link to="/demo-1/">Go to Demo 1</Link> <br />
-    <Link to="/demo-2/">Go to Demo 2 - with billing page css</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </>
-)
+    </>
+  )
+}
 
-export default IndexPage
+export default Dashboard
