@@ -1,7 +1,7 @@
 {
-  "name": "servicebot-gatsby-demo",
+  "name": "servicebot-examples",
   "private": true,
-  "description": "",
+  "description": "This is the main Servicebot Demo Sandbox",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
