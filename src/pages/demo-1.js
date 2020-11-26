@@ -1,31 +1,17 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import useServicebotEmbed from "../hooks/useServicebotEmbed"
 
 const SecondPage = () => {
-  useEffect(() => {
-    /**
-     * Servicebot React code example
-     * https://gist.github.com/bsears90/34c56aab019296e99751b7e802b2a39a
-     */
-
-    window.servicebotSettings = {
+  useServicebotEmbed({
+    settings: {
       servicebot_id: "E0OQN0P0Dort",
       service: "Flat Subscription",
       type: "portal",
       integration: "html"
     }
-    ;(function () {
-      var s = document.createElement("script")
-      s.src =
-        "https://js.servicebot.io/embeds/servicebot-billing-settings-embed.js"
-      s.async = true
-      s.type = "text/javascript"
-      var x = document.getElementsByTagName("script")[0]
-      x.parentNode.insertBefore(s, x)
-    })()
   })
 
   return (

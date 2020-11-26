@@ -1,36 +1,13 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import useServicebotEmbed from "../hooks/useServicebotEmbed"
 
 const DemoTwo = () => {
-  useEffect(() => {
-    /**
-     * Servicebot React code example
-     * https://gist.github.com/bsears90/34c56aab019296e99751b7e802b2a39a
-     */
-    window.servicebotSettings = {
+  useServicebotEmbed({
+    settings: {
       billing_page_id: "dbZGtOSLqnrFdI19tN3G"
-    }
-    ;(function () {
-      var s = document.createElement("script")
-      s.src =
-        "https://js.servicebot.io/embeds/servicebot-billing-settings-embed.js"
-      s.async = true
-      s.type = "text/javascript"
-      s.id = "servicebot-embed-js"
-      var x = document.getElementsByTagName("script")[0]
-      x.parentNode.insertBefore(s, x)
-    })()
-
-    return () => {
-      document.getElementById("servicebot-embed-js").remove()
-      // remove style tag by ID if we have it
-      var sbStyle = document.getElementById("servicebot-embed-style")
-      if (sbStyle) {
-        sbStyle.remove()
-      }
     }
   })
 
