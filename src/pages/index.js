@@ -11,7 +11,7 @@ const IndexPage = () => (
       {/* <Image /> */}
       Hello World!
     </div>
-    <Link to="/demo-1/">Go to Demo 1</Link> <br />
+    <Link to="/demo-1/">Go to Demo 1rr</Link> <br />
     <Link to="/demo-2/">Go to Demo 2 - with billing page css</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
