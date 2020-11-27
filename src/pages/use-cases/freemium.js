@@ -20,7 +20,9 @@ const SecondPage = () => {
         title="Servicebot Demo 1"
         description="This is a Servicebot Demo page"
       />
-      <div id="servicebot-subscription-portal"></div>
+      <div className="px-4 mt-6 sm:px-6 lg:px-8">
+        <div id="servicebot-subscription-portal"></div>
+      </div>
     </Layout>
   )
 }

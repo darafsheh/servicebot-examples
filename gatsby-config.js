@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Servicebot Demo`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`
+    description: `Page Description`,
+    author: `Servicebot`
   },
   plugins: [
     `gatsby-plugin-postcss`,

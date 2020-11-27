@@ -5,7 +5,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout title="Live Demo Dashboard">
-    <SEO title="Home" />
+    <SEO 
+      title="Servicebot Live Demo Website" 
+      description="SaaS billing live examples with Stripe Billing and Servicebot"
+    />
       {/* Pinned projects */}
       <div className="px-4 mt-6 sm:px-6 lg:px-8">
         <h2 className="text-gray-500 text-xs font-medium uppercase tracking-wide">SaaS Use Cases</h2>
