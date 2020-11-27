@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import useServicebotEmbed from "../hooks/useServicebotEmbed"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import useServicebotEmbed from "../../hooks/useServicebotEmbed"
 
-const TestPage = () => {
+const SecondPage = () => {
   useServicebotEmbed({
     settings: {
       servicebot_id: "E0OQN0P0Dort",
@@ -20,9 +20,9 @@ const TestPage = () => {
         title="Servicebot Demo 1"
         description="This is a Servicebot Demo page"
       />
-      <h1>NEW PAGE</h1>
+      <div id="servicebot-subscription-portal"></div>
     </Layout>
   )
 }
 
-export default TestPage
+export default SecondPage
