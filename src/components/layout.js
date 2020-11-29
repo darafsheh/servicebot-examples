@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, {useState} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -24,13 +24,17 @@ const Layout = ({ title, children }) => {
     }
   `);
 
-  //const [isOpen, toggleSidebar] = React.useState(true);
+  //Implment Preview Mode
+  const [previewMode, setPreviewMode] = useState(false);
+  function previewModeOn() {
+    setPreviewMode(!previewMode);
+  }
 
   return (
     <div className="h-screen bg-white overflow-hidden flex">
-      <Sidebar />
-      <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none" tabindex="0">
-        <Header siteTitle={title || `Servicebot Demo`} />
+      {previewMode ? <></>:<Sidebar />}
+      <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none bg-gray-100" tabindex="0">
+        <Header siteTitle={title || `Servicebot Demo`} previewMode={previewMode} previewModeOn={previewModeOn} />
         {children}
       </main>
     </div>
