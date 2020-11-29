@@ -4,6 +4,8 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import useServicebotEmbed from "../../hooks/useServicebotEmbed"
 
+import { useLocation } from '@reach/router'
+
 const SaaSFreemiumPage = () => {
     const [step1, setStep1] = useState(true);
     const [step2, setStep2] = useState(false);
@@ -42,8 +44,10 @@ const SaaSFreemiumPage = () => {
         settings: billingPage
     });
 
+    const location = useLocation();
+
   return (
-    <Layout title="SaaS Freemium Billing Flow">
+    <Layout title="SaaS Freemium Billing Flow" location={location.search}>
       <SEO
         title="Servicebot Demo 1"
         description="This is a Servicebot Demo page"

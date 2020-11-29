@@ -13,7 +13,9 @@ import Sidebar from "./sidebar"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ title, children }) => {
+import queryString from 'query-string';
+
+const Layout = ({ title, children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -24,8 +26,18 @@ const Layout = ({ title, children }) => {
     }
   `);
 
+  let embedModeOn = false;
+  if(location) {
+    const embedMode = queryString.parse(location);
+    if(embedMode.embed){
+      embedModeOn = true;
+    }  
+  }
+
   //Implment Preview Mode
-  const [previewMode, setPreviewMode] = useState(false);
+  const [previewMode, setPreviewMode] = useState(embedModeOn);
+  
+
   function previewModeOn() {
     setPreviewMode(!previewMode);
   }
@@ -34,7 +46,9 @@ const Layout = ({ title, children }) => {
     <div className="h-screen bg-white overflow-hidden flex">
       {previewMode ? <></>:<Sidebar />}
       <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none bg-gray-100" tabindex="0">
+        {!embedModeOn &&
         <Header siteTitle={title || `Servicebot Demo`} previewMode={previewMode} previewModeOn={previewModeOn} />
+        }
         {children}
       </main>
     </div>

@@ -13,7 +13,7 @@ const Nav = ({}) => {
         <div className="flex flex-col h-0 flex-1 border-r border-gray-200 bg-white">
           <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
             <div className="flex items-center flex-shrink-0 px-4">
-              <img className="h-8 w-auto" src="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc080009af2653bede44190_Servicebot_Logotype_Purple.svg" alt="Workflow" />
+              <img className="h-8 w-auto" src="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc3bf560f3f813c2bfe0e8a_Servicebot_Logotype_Blue.svg" alt="Servicebot Logo" />
             </div>
             <nav className="mt-5 flex-1 px-2 bg-white space-y-1">  
                 <>
@@ -47,7 +47,7 @@ const Nav = ({}) => {
                         Freemium Flow
                     </span>
                     </Link>
-                    <Link to="/free-trial" activeClassName="bg-gray-100 text-gray-900" className="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50">
+                    {/* <Link to="/free-trial" activeClassName="bg-gray-100 text-gray-900" className="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50">
                     <span class="w-2.5 h-2.5 mr-4 bg-green-500 rounded-full" aria-hidden="true"></span>
                     <span class="truncate">
                         Free Trial Flow
@@ -64,22 +64,19 @@ const Nav = ({}) => {
                     <span class="truncate">
                         Paid Upfront Flow
                     </span>
-                    </Link>
+                    </Link> */}
                     </div>
                 </div>
-                <div className="space-y-1">
+                {/* <div className="space-y-1">
                     <button onClick={() => setPricingStrategy(!pricingStrategy)} className="group w-full flex items-center pl-2 pr-1 py-2 text-sm font-medium rounded-md bg-white text-gray-600 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                    {/* Heroicon name: folder */}
                     <svg className="mr-3 h-6 w-6 text-gray-400 group-hover:text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     Pricing Strategies
-                    {/* Expanded: "text-gray-400 rotate-90", Collapsed: "text-gray-300" */}
                     <svg className={`${pricingStrategy ? 'text-gray-500 rotate-90' : 'text-gray-300'} ml-auto h-5 w-5 transform group-hover:text-gray-400 transition-colors ease-in-out duration-150`} viewBox="0 0 20 20" aria-hidden="true">
                         <path d="M6 6L14 10L6 14V6Z" fill="currentColor" />
                     </svg>
                     </button>
-                    {/* Expandable link section, show/hide based on state. */}
                     <div className={`${pricingStrategy ? '' : 'hidden'} space-y-1`}>
                     <a href="" className="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50">
                     <span class="w-2.5 h-2.5 mr-4 bg-yellow-500 rounded-full" aria-hidden="true"></span>
@@ -88,7 +85,7 @@ const Nav = ({}) => {
                     </span>
                     </a>
                     </div>
-                </div>
+                </div> */}
                 </>
             </nav>
           </div>

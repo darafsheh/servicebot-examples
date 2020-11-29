@@ -4,9 +4,6 @@ import PropTypes from "prop-types"
 import React, { useState } from 'react'
 import { Transition } from '@headlessui/react'
 import Nav from "./nav"
-
-//https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5ea83e59594ab8eb5fa2ee3c_Header_Logo%20Expanded.svg
-
  
 const Sidebar = ({ siteTitle }) => {
   
