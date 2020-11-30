@@ -55,7 +55,7 @@ function SEO({ description, lang, meta, title, ogimage }) {
         },
         {
           name: `og:image`,
-          contet: ogimage
+          content: ogimage
         },
         {
           name: `twitter:card`,
