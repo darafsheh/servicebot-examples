@@ -164,7 +164,7 @@ const SaaSFreemiumPage = () => {
             </div>
         </>
 
-        <div class="border-4 border-dashed border-gray-200 rounded-lg ">
+        <div class="border-4 border-dashed border-gray-200 rounded-lg mb-5">
             {step1 && 
                 <div className="py-20 bg-white flex flex-col justify-center py-12 sm:px-6 lg:px-8">
                     <div className="sm:mx-auto sm:w-full sm:max-w-md">

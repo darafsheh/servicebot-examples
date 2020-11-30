@@ -54,6 +54,14 @@ function SEO({ description, lang, meta, title, ogimage }) {
           content: `website`,
         },
         {
+          name: `og:image:width`,
+          content: `1200`
+        },
+        {
+          name: `og:image:height`,
+          content: `630`
+        },
+        {
           name: `og:image`,
           content: ogimage
         },
@@ -72,6 +80,10 @@ function SEO({ description, lang, meta, title, ogimage }) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: ogimage,
         },
       ].concat(meta)}
     />
