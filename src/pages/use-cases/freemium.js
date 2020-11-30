@@ -51,7 +51,7 @@ const SaaSFreemiumPage = () => {
       <SEO
         title="SaaS freemium model billing flow"
         description="Learn how SaaS freemium pricing model works with Stripe & Servicebot"
-        ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc44bf4efab2609c9d64cf4_servicebot-demo-freemium.png"
+        ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc5568994b42c569e1878b7_servicebot-demo-freemium.png"
       />
       <div className="px-4 mt-1 sm:px-6 lg:px-8">
         <div className="flex mb-5">
