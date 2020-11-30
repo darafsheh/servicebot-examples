@@ -85,6 +85,10 @@ function SEO({ description, lang, meta, title, ogimage }) {
           name: `twitter:image`,
           content: ogimage,
         },
+        {
+          name: `twitter:card`,
+          content: `summary_large_image`,
+        },
       ].concat(meta)}
     />
   )
