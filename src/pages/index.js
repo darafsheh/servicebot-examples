@@ -8,6 +8,7 @@ const IndexPage = () => (
     <SEO 
       title="Servicebot Live Demo Website" 
       description="SaaS billing live examples with Stripe Billing and Servicebot"
+      ogimafe="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc44bf4b2be4766cd28bef1_servicebot-demo-home.png"
     />
       {/* Pinned projects */}
       <div className="px-4 mt-6 sm:px-6 lg:px-8">

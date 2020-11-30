@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Servicebot Demo`,
     description: `Page Description`,
-    author: `Servicebot`
+    author: `Servicebot`,
+    ogimage: `https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc44bf4b2be4766cd28bef1_servicebot-demo-home.png`,
   },
   plugins: [
     `gatsby-plugin-postcss`,

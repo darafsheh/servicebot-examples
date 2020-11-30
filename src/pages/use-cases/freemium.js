@@ -49,8 +49,9 @@ const SaaSFreemiumPage = () => {
   return (
     <Layout title="SaaS Freemium Billing Flow" location={location.search}>
       <SEO
-        title="Servicebot Demo 1"
-        description="This is a Servicebot Demo page"
+        title="SaaS freemium model billing flow"
+        description="Learn how SaaS freemium pricing model works with Stripe & Servicebot"
+        ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc44bf4efab2609c9d64cf4_servicebot-demo-freemium.png"
       />
       <div className="px-4 mt-1 sm:px-6 lg:px-8">
         <div className="flex mb-5">
@@ -146,7 +147,7 @@ const SaaSFreemiumPage = () => {
                             </span>
                         </span>
                         <span className="mt-0.5 ml-4 min-w-0 flex flex-col">
-                            <span className={`${step4 ? 'text-blue-600':'text-black'} text-xs font-semibold uppercase tracking-wide`}>Manages her subscription</span>
+                            <span className={`${step4 ? 'text-blue-600':'text-black'} text-xs font-semibold uppercase tracking-wide`}>Manages subscription</span>
                             <span className="text-sm font-medium text-gray-500">Uses Customer Portal</span>
                         </span>
                         </span>
