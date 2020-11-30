@@ -55,11 +55,11 @@ function SEO({ description, lang, meta, title, ogimage }) {
         },
         {
           name: `og:image:width`,
-          content: `1200`
+          content: `600`
         },
         {
           name: `og:image:height`,
-          content: `630`
+          content: `310`
         },
         {
           name: `og:image`,
