@@ -15,7 +15,7 @@ const IndexPage = () => (
         <h2 className="text-gray-500 text-xs font-medium uppercase tracking-wide">SaaS Use Cases</h2>
         <ul className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 xl:grid-cols-4 mt-3">
           <Link to="/use-cases/freemium" className="relative col-span-1 flex shadow-sm rounded-md hover:shadow-md">
-            <div className="flex-shrink-0 flex items-center justify-center w-16 bg-green-600 text-white text-sm font-medium rounded-l-md">
+            <div className="flex-shrink-0 flex items-center justify-center w-16 bg-blue-600 text-white text-sm font-medium rounded-l-md">
               <svg className="mr-0 h-6 w-6 text-white group-hover:text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
               </svg>
@@ -29,7 +29,7 @@ const IndexPage = () => (
               </div>
             </div>
           </Link>
-          <Link to="/freemium" className="relative col-span-1 flex shadow-sm rounded-md hover:shadow-md">
+          {/* <Link to="/freemium" className="relative col-span-1 flex shadow-sm rounded-md hover:shadow-md">
             <div className="flex-shrink-0 flex items-center justify-center w-16 bg-green-600 text-white text-sm font-medium rounded-l-md">
               <svg className="mr-0 h-6 w-6 text-white group-hover:text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
@@ -73,8 +73,29 @@ const IndexPage = () => (
                 <p className="text-gray-500">Paid upfront billing demo</p>
               </div>
             </div>
-          </Link>
+          </Link> */}
           {/* More project cards... */}
+        </ul>
+      </div>
+
+      <div className="px-4 mt-6 sm:px-6 lg:px-8">
+        <h2 className="text-gray-500 text-xs font-medium uppercase tracking-wide">Pricing Page Examples</h2>
+        <ul className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 xl:grid-cols-4 mt-3">
+          <Link to="/pricing-pages/standard" className="relative col-span-1 flex shadow-sm rounded-md hover:shadow-md">
+            <div className="flex-shrink-0 flex items-center justify-center w-16 bg-green-600 text-white text-sm font-medium rounded-l-md">
+              <svg className="mr-0 h-6 w-6 text-white group-hover:text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+            </div>
+            <div className="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
+              <div className="flex-1 px-4 py-2 text-sm truncate">
+                <span className="text-gray-900 font-medium">
+                  Standard Pricing
+                </span>
+                <p className="text-gray-500">3 tier flat subscription</p>
+              </div>
+            </div>
+          </Link>
         </ul>
       </div>
 

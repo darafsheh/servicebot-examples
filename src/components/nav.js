@@ -5,7 +5,8 @@ import React, { useState } from 'react'
 const Nav = ({}) => {
 
     const [ucSaas, setUcSaaSOn] = useState(true);
-    const [pricingStrategy, setPricingStrategy] = useState(false); 
+    const [pricingStrategy, setPricingStrategy] = useState(false);
+    const [pricingPages, setPricingPagesOn] = useState(true);
 
   return (
   <>
@@ -42,7 +43,7 @@ const Nav = ({}) => {
                     {/* Expandable link section, show/hide based on state. */}
                     <div className={`${ucSaas ? '' : 'hidden'} space-y-1`}>
                     <Link to="/use-cases/freemium" activeClassName="bg-gray-100 text-gray-900" className="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50">
-                    <span class="w-2.5 h-2.5 mr-4 bg-green-500 rounded-full" aria-hidden="true"></span>
+                    <span class="w-2.5 h-2.5 mr-4 bg-blue-500 rounded-full" aria-hidden="true"></span>
                     <span class="truncate">
                         Freemium Flow
                     </span>
@@ -86,6 +87,25 @@ const Nav = ({}) => {
                     </a>
                     </div>
                 </div> */}
+                <div className="space-y-1">
+                    <button onClick={() => setPricingPagesOn(!pricingPages)} className="group w-full flex items-center pl-2 pr-1 py-2 text-sm font-medium rounded-md bg-white text-gray-600 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <svg className="mr-3 h-6 w-6 text-gray-400 group-hover:text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                    </svg>
+                    Pricing Page Examples
+                    <svg className={`${pricingPages ? 'text-gray-500 rotate-90' : 'text-gray-300'} ml-auto h-5 w-5 transform group-hover:text-gray-400 transition-colors ease-in-out duration-150`} viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M6 6L14 10L6 14V6Z" fill="currentColor" />
+                    </svg>
+                    </button>
+                    <div className={`${pricingPages ? '' : 'hidden'} space-y-1`}>
+                      <Link to="/pricing-pages/standard" activeClassName="bg-gray-100 text-gray-900" className="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50">
+                      <span class="w-2.5 h-2.5 mr-4 bg-green-500 rounded-full" aria-hidden="true"></span>
+                      <span class="truncate">
+                          Standard Pricing
+                      </span>
+                      </Link>
+                    </div>
+                </div>
                 </>
             </nav>
           </div>
