@@ -11,7 +11,7 @@ const StandardPricingPage = () => {
     const [step2, setStep2] = useState(false);
     const [step3, setStep3] = useState(false);
     const [step4, setStep4] = useState(false);
-    const [billingPage, setBillingPage] = useState({billing_page_id:'zs8L1L0mHfTZcUjVrOJX'});
+    const [billingPage, setBillingPage] = useState({billing_page_id:'NiIKiHAeN2mbhmuGQl0d', "email":"tim@yopmail.com"});
 
     function setStep1On(){
         setStep1(true);
@@ -71,9 +71,9 @@ const StandardPricingPage = () => {
                         <header>
                         <div>
                             <h1 className="text-3xl font-bold leading-tight text-gray-900">
-                            Live standard pricing examples
+                            Live customer portal example
                             </h1>
-                            <span className="text-green-600">You can select a plan and test a fake payment.</span>
+                            <span className="text-green-600">This is showing a customer portal for currently paying customer</span>
                         </div>
                         </header>
                         <main>
