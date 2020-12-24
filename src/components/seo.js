@@ -94,7 +94,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-  ogimage: `https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc44bf4b2be4766cd28bef1_servicebot-demo-home.png`
+  ogimage: `https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fe4309278a5f96098cfa32d_demo-home.jpg`
 }
 
 SEO.propTypes = {
