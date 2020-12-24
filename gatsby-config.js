@@ -3,7 +3,7 @@ module.exports = {
     title: `Servicebot Demo`,
     description: `Page Description`,
     author: `Servicebot`,
-    ogimage: `https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc44bf4b2be4766cd28bef1_servicebot-demo-home.png`,
+    ogimage: `https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fe4309278a5f96098cfa32d_demo-home.jpg`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -27,7 +27,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/servicebot-icon.png` // This path is relative to the root of the site.
+        icon: `src/images/billflow.png` // This path is relative to the root of the site.
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

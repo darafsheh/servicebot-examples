@@ -49,8 +49,8 @@ const StandardPricingPage = () => {
     <Layout title="Standard Pricing Page" location={location.search}>
       <SEO
         title="SaaS Standard Pricing Page"
-        description="Live example of standard SaaS pricing pages with Stripe and Servicebot"
-        ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc5cb37eab0e035fa60f54e_standard-pricing.png"
+        description="Live example of standard SaaS pricing pages with Stripe and Billflow"
+        ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fe43090e084a831459da0af_pricing%20page.jpg"
       />
       <div className="px-4 mt-1 sm:px-6 lg:px-8">
         <div className="flex mb-5">

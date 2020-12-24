@@ -7,6 +7,7 @@ const Nav = ({}) => {
     const [ucSaas, setUcSaaSOn] = useState(true);
     const [pricingStrategy, setPricingStrategy] = useState(false);
     const [pricingPages, setPricingPagesOn] = useState(true);
+    const [customerPortals, setCustomerPortalsOn] = useState(true);
 
   return (
   <>
@@ -14,7 +15,7 @@ const Nav = ({}) => {
         <div className="flex flex-col h-0 flex-1 border-r border-gray-200 bg-white">
           <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
             <div className="flex items-center flex-shrink-0 px-4">
-              <img className="h-8 w-auto" src="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc3bf560f3f813c2bfe0e8a_Servicebot_Logotype_Blue.svg" alt="Servicebot Logo" />
+              <img className="h-8 w-auto" src="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fe427d3f6f5aa4e6fb97291_Billflow%20Demo%20Logo_Blue.png" alt="Servicebot Logo" />
             </div>
             <nav className="mt-5 flex-1 px-2 bg-white space-y-1">  
                 <>
@@ -107,20 +108,20 @@ const Nav = ({}) => {
                     </div>
                 </div>
                 <div className="space-y-1">
-                    <button onClick={() => setPricingPagesOn(!pricingPages)} className="group w-full flex items-center pl-2 pr-1 py-2 text-sm font-medium rounded-md bg-white text-gray-600 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <button onClick={() => setCustomerPortalsOn(!customerPortals)} className="group w-full flex items-center pl-2 pr-1 py-2 text-sm font-medium rounded-md bg-white text-gray-600 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500">
                     <svg className="mr-3 h-6 w-6 text-gray-400 group-hover:text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                     </svg>
                     Customer Portals
-                    <svg className={`${pricingPages ? 'text-gray-500 rotate-90' : 'text-gray-300'} ml-auto h-5 w-5 transform group-hover:text-gray-400 transition-colors ease-in-out duration-150`} viewBox="0 0 20 20" aria-hidden="true">
+                    <svg className={`${customerPortals ? 'text-gray-500 rotate-90' : 'text-gray-300'} ml-auto h-5 w-5 transform group-hover:text-gray-400 transition-colors ease-in-out duration-150`} viewBox="0 0 20 20" aria-hidden="true">
                         <path d="M6 6L14 10L6 14V6Z" fill="currentColor" />
                     </svg>
                     </button>
-                    <div className={`${pricingPages ? '' : 'hidden'} space-y-1`}>
+                    <div className={`${customerPortals ? '' : 'hidden'} space-y-1`}>
                       <Link to="/customer-portals/portal" activeClassName="bg-gray-100 text-gray-900" className="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50">
-                      <span class="w-2.5 h-2.5 mr-4 bg-green-500 rounded-full" aria-hidden="true"></span>
+                      <span class="w-2.5 h-2.5 mr-4 bg-purple-500 rounded-full" aria-hidden="true"></span>
                       <span class="truncate">
-                          Standard Portal
+                          Unit-based Portal
                       </span>
                       </Link>
                     </div>

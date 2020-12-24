@@ -46,10 +46,10 @@ const StandardPricingPage = () => {
     const location = useLocation();
 
   return (
-    <Layout title="Standard Pricing Page" location={location.search}>
+    <Layout title="Standard Customer Portal" location={location.search}>
       <SEO
-        title="SaaS Standard Pricing Page"
-        description="Live example of standard SaaS pricing pages with Stripe and Servicebot"
+        title="SaaS Customer Portal Live Example"
+        description="Live example of customer portal with Stripe and Billflow"
         ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc5cb37eab0e035fa60f54e_standard-pricing.png"
       />
       <div className="px-4 mt-1 sm:px-6 lg:px-8">
@@ -68,14 +68,6 @@ const StandardPricingPage = () => {
                     {/* This example requires Tailwind CSS v2.0+ */}
                     <div className="bg-white">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-                        <header>
-                        <div>
-                            <h1 className="text-3xl font-bold leading-tight text-gray-900">
-                            Live customer portal example
-                            </h1>
-                            <span className="text-green-600">This is showing a customer portal for currently paying customer</span>
-                        </div>
-                        </header>
                         <main>
                         <div className="mt-10" id="servicebot-subscription-portal"></div>
                         </main>

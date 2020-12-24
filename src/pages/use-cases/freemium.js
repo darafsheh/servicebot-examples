@@ -50,8 +50,8 @@ const SaaSFreemiumPage = () => {
     <Layout title="SaaS Freemium Billing Flow" location={location.search}>
       <SEO
         title="SaaS freemium model billing flow"
-        description="Learn how SaaS freemium pricing model works with Stripe & Servicebot"
-        ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc5568994b42c569e1878b7_servicebot-demo-freemium.png"
+        description="Learn how SaaS freemium pricing model works with Stripe & Billflow"
+        ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fe43092cb3c750200fdac5d_freemium.jpg"
       />
       <div className="px-4 mt-1 sm:px-6 lg:px-8">
         <div className="flex mb-5">
@@ -168,7 +168,7 @@ const SaaSFreemiumPage = () => {
             {step1 && 
                 <div className="py-20 bg-white flex flex-col justify-center py-12 sm:px-6 lg:px-8">
                     <div className="sm:mx-auto sm:w-full sm:max-w-md">
-                    <img className="mx-auto h-12 w-auto" src="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc3ba5a1c29736990f78490_Example%20SaaS%20logo%20dark.svg" alt="Servicebot Example SaaS demo" />
+                    <img className="mx-auto h-12 w-auto" src="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc3ba5a1c29736990f78490_Example%20SaaS%20logo%20dark.svg" alt="Billflow Example SaaS demo" />
                     <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
                         This is a fake registration
                     </h2>
@@ -223,7 +223,7 @@ const SaaSFreemiumPage = () => {
                     <div className="flex justify-between h-16">
                         <div className="flex">
                         <div className="flex-shrink-0 flex items-center">
-                            <img className="block h-8 w-auto" src="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc3ba5a1c29736990f78490_Example%20SaaS%20logo%20dark.svg" alt="Servicebot Example SaaS demo" />
+                            <img className="block h-8 w-auto" src="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc3ba5a1c29736990f78490_Example%20SaaS%20logo%20dark.svg" alt="Billflow Example SaaS demo" />
                         </div>
                         <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
                             <span className="inline-flex items-center px-1 pt-1 border-b-2 border-blue-500 text-sm font-medium text-gray-900">Dashboard</span>
@@ -279,7 +279,7 @@ const SaaSFreemiumPage = () => {
                         <div className="flex justify-between h-16">
                             <div className="flex">
                             <div className="flex-shrink-0 flex items-center">
-                                <img className="block h-8 w-auto" src="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc3ba5a1c29736990f78490_Example%20SaaS%20logo%20dark.svg" alt="Servicebot Example SaaS demo" />
+                                <img className="block h-8 w-auto" src="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc3ba5a1c29736990f78490_Example%20SaaS%20logo%20dark.svg" alt="Billflow Example SaaS demo" />
                             </div>
                             <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
                                 <a onClick={() => {setStep2On()}} className="cursor-pointer inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">Dashboard</a>
@@ -296,7 +296,7 @@ const SaaSFreemiumPage = () => {
                             <h1 className="text-3xl font-bold leading-tight text-gray-900">
                             Plan Picker Example
                             </h1>
-                            <span className="text-blue-600">This is a Servicebot embeddable Plan Picker that let customers upgrade their account.</span>
+                            <span className="text-blue-600">This is a Billflow embeddable Plan Picker that let customers upgrade their account.</span>
                         </div>
                         </header>
                         <main>
@@ -316,7 +316,7 @@ const SaaSFreemiumPage = () => {
                         <div className="flex justify-between h-16">
                             <div className="flex">
                             <div className="flex-shrink-0 flex items-center">
-                                <img className="block h-8 w-auto" src="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc3ba5a1c29736990f78490_Example%20SaaS%20logo%20dark.svg" alt="Servicebot Example SaaS demo" />
+                                <img className="block h-8 w-auto" src="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc3ba5a1c29736990f78490_Example%20SaaS%20logo%20dark.svg" alt="Billflow Example SaaS demo" />
                             </div>
                             <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
                                 <a onClick={() => {setStep2On()}} className="cursor-pointer inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">Dashboard</a>
@@ -333,7 +333,7 @@ const SaaSFreemiumPage = () => {
                             <h1 className="text-3xl font-bold leading-tight text-gray-900">
                             Customer Portal Example
                             </h1>
-                            <span className="text-blue-600">This is a Servicebot embeddable Customer Portal that lets customers manage their subscriptions.</span>
+                            <span className="text-blue-600">This is a Billflow embeddable Customer Portal that lets customers manage their subscriptions.</span>
                         </div>
                         </header>
                         <main>
