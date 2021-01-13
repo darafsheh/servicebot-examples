@@ -130,7 +130,7 @@ const Nav = ({}) => {
             </nav>
           </div>
           <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
-            <Link to="https://servicebot.io" className="flex-shrink-0 w-full group block">
+            <Link to="https://billflow.io" className="flex-shrink-0 w-full group block">
               <div className="flex items-center">
                 <div>
                     <svg className="mr-3 h-6 w-6 text-gray-400 group-hover:text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -139,7 +139,7 @@ const Nav = ({}) => {
                 </div>
                 <div className="ml-3">
                   <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900">
-                    Back to Servicebot
+                    Back to Billflow
                   </p>
                   <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">
                     Website
