@@ -29,7 +29,18 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/billflow.png` // This path is relative to the root of the site.
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-98007770-1",
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "billflow.io",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
