@@ -6,3 +6,7 @@
     display:flex;
     margin-top:0px !important;
 }
+
+.__product-image img {
+    margin: auto;
+}
