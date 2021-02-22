@@ -50,7 +50,7 @@ const PortalMetricBilling = () => {
       <SEO
         title="SaaS Customer Portal Metric Billing Example"
         description="Live example of metric customer portal with Stripe and Billflow"
-        ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fc5cb37eab0e035fa60f54e_standard-pricing.png"
+        ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/603325388177f0202909252e_metric-billing.jpg"
       />
       <div className="px-4 mt-1 sm:px-6 lg:px-8">
         <div className="flex mb-5">

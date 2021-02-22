@@ -11,7 +11,7 @@ const SaaSMetricFlow = () => {
     const [step2, setStep2] = useState(false);
     const [step3, setStep3] = useState(false);
     const [step4, setStep4] = useState(false);
-    const [billingPage, setBillingPage] = useState({billing_page_id:'ybe5IKtwlQQxssBKhxwg',email:'jane@yopmail.com'});
+    const [billingPage, setBillingPage] = useState({billing_page_id:'ybe5IKtwlQQxssBKhxwg',email:'shar-metric@yopmail.com'});
 
     function setStep1On(){
         setStep1(true);
@@ -24,7 +24,7 @@ const SaaSMetricFlow = () => {
         setStep2(true);
         setStep3(false);
         setStep4(false);
-        setBillingPage({billing_page_id:'ybe5IKtwlQQxssBKhxwg',email:'jane@yopmail.com'});
+        setBillingPage({billing_page_id:'ybe5IKtwlQQxssBKhxwg',email:'shar-metric@yopmail.com'});
     }
     function setStep3On(){
         setStep1(false);
@@ -37,7 +37,7 @@ const SaaSMetricFlow = () => {
         setStep2(false);
         setStep3(false);
         setStep4(true);
-        setBillingPage({billing_page_id:'e2MnE7x0NWGJUJ2rjitF',email:'jane@yopmail.com'})
+        setBillingPage({billing_page_id:'e2MnE7x0NWGJUJ2rjitF',email:'shar-metric@yopmail.com'})
     }
 
     useServicebotEmbed({
@@ -51,7 +51,7 @@ const SaaSMetricFlow = () => {
       <SEO
         title="SaaS metric model billing flow"
         description="Learn how SaaS metric billing model works with Stripe Billing & Billflow"
-        ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fe43092cb3c750200fdac5d_freemium.jpg"
+        ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/603325388177f0202909252e_metric-billing.jpg"
       />
       <div className="px-4 mt-1 sm:px-6 lg:px-8">
         <div className="flex mb-5">
