@@ -16,7 +16,7 @@ const useServicebotEmbed = props => {
     ;(function () {
       var s = document.createElement("script")
       s.src =
-        "https://js.servicebot.io/embeds/servicebot-billing-settings-embed.js"
+        "https://js.billflow.io/billflow-embed.js"
       s.async = true
       s.type = "text/javascript"
       s.id = "servicebot-embed-js"
