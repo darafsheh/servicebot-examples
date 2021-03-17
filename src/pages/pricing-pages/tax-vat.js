@@ -60,7 +60,7 @@ const TaxVatDemo = () => {
     const location = useLocation();
 
   return (
-    <Layout title="Standard Pricing Page" location={location.search}>
+    <Layout title="Automatic Tax & VAT Checkout" location={location.search}>
       <SEO
         title="SaaS automatic tax & VAT calculation"
         description="Live example of automatic tax and VAT calculation with Stripe and Billflow"
@@ -82,14 +82,6 @@ const TaxVatDemo = () => {
                     {/* This example requires Tailwind CSS v2.0+ */}
                     <div className="bg-white">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-                        <header>
-                        <div>
-                            <h1 className="text-3xl font-bold leading-tight text-gray-900">
-                            Tax and VAT demo with Stripe Billing & Billflow
-                            </h1>
-                            <span className="text-green-600">You can use a Stripe Test credit card.</span>
-                        </div>
-                        </header>
                         <main>
                         <div className="mt-10" id="servicebot-subscription-portal"></div>
                         </main>

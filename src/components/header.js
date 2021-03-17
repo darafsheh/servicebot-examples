@@ -39,7 +39,7 @@ const Header = ({ siteTitle, previewMode, previewModeOn }) => (
           </span>
           <p className="ml-3 font-medium text-black truncate">
             <span>
-              You are currently viewing a live Servicebot billing demo
+              You are currently viewing a live Billflow billing page demo
             </span>
           </p>
         </div>

@@ -47,7 +47,7 @@ const Layout = ({ title, children, location }) => {
       {previewMode ? <></>:<Sidebar />}
       <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none bg-gray-100" tabindex="0">
         {!embedModeOn &&
-        <Header siteTitle={title || `Servicebot Demo`} previewMode={previewMode} previewModeOn={previewModeOn} />
+        <Header siteTitle={title || `Billflow Demo`} previewMode={previewMode} previewModeOn={previewModeOn} />
         }
         {children}
       </main>
