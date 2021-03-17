@@ -64,7 +64,7 @@ const TaxVatDemo = () => {
       <SEO
         title="SaaS automatic tax & VAT calculation"
         description="Live example of automatic tax and VAT calculation with Stripe and Billflow"
-        ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fe43090e084a831459da0af_pricing%20page.jpg"
+        ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/60527fbb8d28fd39d811425e_billflow-demo-tax-vat.jpg"
       />
       <div className="px-4 mt-1 sm:px-6 lg:px-8">
         <div className="flex mb-5">
