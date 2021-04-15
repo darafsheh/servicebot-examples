@@ -8,7 +8,7 @@ const DashboardPage = () => (
     <SEO 
       title="Billflow Live Demo Website" 
       description="SaaS billing live examples with Stripe Billing and Billflow"
-      ogimafe="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fe4309278a5f96098cfa32d_demo-home.jpg"
+      ogimage="https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fe4309278a5f96098cfa32d_demo-home.jpg"
     />
       {/* Pinned projects */}
       <div className="px-4 mt-6 sm:px-6 lg:px-8">
