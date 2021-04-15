@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-const DashboardPage = () => (
+const ExamplesListPage = () => (
   <Layout title="Live Demo Dashboard">
     <SEO 
       title="Billflow Live Demo Website" 
@@ -222,4 +222,4 @@ const DashboardPage = () => (
   </Layout>
 )
 
-export default DashboardPage
+export default ExamplesListPage

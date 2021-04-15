@@ -38,7 +38,7 @@ module.exports = {
         // Delays sending pageview hits on route update (in milliseconds)
         pageTransitionDelay: 0,
         siteSpeedSampleRate: 10,
-        cookieDomain: "billflow.io",
+        cookieDomain: "demo.billflow.io",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

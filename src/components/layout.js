@@ -27,8 +27,12 @@ const Layout = ({ title, children, location }) => {
   `);
 
   let embedModeOn = false;
+  console.log("yoooo0000");
+  console.log(location);
   if(location) {
     const embedMode = queryString.parse(location);
+    console.log("yoooo");
+    console.log(embedMode);
     if(embedMode.embed){
       embedModeOn = true;
     }  
