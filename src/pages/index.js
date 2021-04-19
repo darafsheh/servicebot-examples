@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 const DashboardPage = () => (
-  <Layout title="Live Demo Dashboard">
+  <Layout title="Interactive SaaS billing demo">
     <SEO 
       title="Billflow Live Demo Website" 
       description="SaaS billing live examples with Stripe Billing and Billflow"
@@ -12,8 +12,40 @@ const DashboardPage = () => (
     />
       {/* Pinned projects */}
       <div className="px-4 mt-6 sm:px-6 lg:px-8">
+
+        <div className="bg-gray-50 mb-10 rounded-lg  bg-blue-700">
+            <div className="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:py-10 lg:px-4 lg:flex lg:items-center lg:justify-between">
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                <span className="block text-white mb-2">What is your billing flow?</span>
+                <span className="block text-blue-400">Find out in two questions.</span>
+            </h2>
+            <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                <div className="ml-3 inline-flex rounded-md shadow">
+                <Link to="/saas-billing-flows" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50">
+                Take the quiz
+                </Link>
+                </div>
+            </div>
+            </div>
+        </div>
+
         <h2 className="text-gray-500 text-xs font-medium uppercase tracking-wide">SaaS Use Cases</h2>
         <ul className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 xl:grid-cols-4 mt-3">
+            <Link to="/saas-billing-flows" className="relative col-span-1 flex shadow-sm rounded-md hover:shadow-md">
+                <div className="flex-shrink-0 flex items-center justify-center w-16 bg-blue-600 text-white text-sm font-medium rounded-l-md">
+                <svg className="mr-0 h-6 w-6 text-white group-hover:text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                </svg>
+                </div>
+                <div className="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
+                <div className="flex-1 px-4 py-2 text-sm truncate">
+                    <span className="text-gray-900 font-medium">
+                    Billing Flow Quiz
+                    </span>
+                    <p className="text-gray-500">For product leads</p>
+                </div>
+                </div>
+            </Link>
           <Link to="/use-cases/freemium" className="relative col-span-1 flex shadow-sm rounded-md hover:shadow-md">
             <div className="flex-shrink-0 flex items-center justify-center w-16 bg-blue-600 text-white text-sm font-medium rounded-l-md">
               <svg className="mr-0 h-6 w-6 text-white group-hover:text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

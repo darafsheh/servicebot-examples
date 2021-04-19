@@ -27,6 +27,12 @@ const Nav = ({}) => {
                     </svg>
                     Demo Home
                     </Link>
+                    <Link to="/saas-billing-flows" activeClassName="bg-gray-100 text-gray-900" className="group w-full flex items-center pl-2 py-2 text-sm font-medium rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="mr-3 h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Billing Flow Quiz
+                    </Link>
                 </div>
                 <div className="space-y-1">
                     <button onClick={() => setUcSaaSOn(!ucSaas)} className="group w-full flex items-center pl-2 pr-1 py-2 text-sm font-medium rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500">

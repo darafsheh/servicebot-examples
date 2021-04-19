@@ -334,12 +334,15 @@ const IndexPage = () => {
                                 <img className="w-full" src={diagramNum} alt="Stripe Billing SaaS billing diagram by Billflow"></img>
                             </div>
                             <div className="mt-10">
-                                <h2 className="text-2xl font-bold leading-tight text-gray-900 mb-4 text-center">
-                                    Do you want a custom architecture for your billing model?
-                                </h2>
+                                <div className="text-center my-10">
+                                    <button type="button" id="flow-consultation" className="flow-consultation inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                        Customize Billing Flow
+                                    </button>
+                                </div>
                                 <div className="mb-10 text-gray-400 text-center">
-                                    Billflow team specializes on SaaS billing with Stripe.<br/>
-                                    Contact us to design you a custom billing architecture based on your pricing and acquisition model
+                                    <span className="text-gray-500">Billflow team specializes on SaaS billing with Stripe</span><br/>
+                                    The billing flows in this site are standard flows based on pricing and acquisition model <br/>
+                                    You may have a more complex flow based on additional requirements.<br/>
                                 </div>
                             </div>
                             

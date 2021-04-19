@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Servicebot Demo`,
+    title: `Billflow Demo`,
     description: `Page Description`,
-    author: `Servicebot`,
+    author: `Billflow`,
     ogimage: `https://uploads-ssl.webflow.com/5ea83e59594ab8d915a2ed46/5fe4309278a5f96098cfa32d_demo-home.jpg`,
   },
   plugins: [
