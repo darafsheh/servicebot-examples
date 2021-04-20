@@ -12,7 +12,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Sidebar from "./sidebar"
 import Header from "./header"
 import "./layout.css"
-import Intercom from 'react-intercom';
 
 import queryString from 'query-string';
 
@@ -29,15 +28,12 @@ const Layout = ({ title, children, location }) => {
 
   let embedModeOn = false;
   let chatOn = true;
-  console.log(location);
+
   if(location) {
     const embedMode = queryString.parse(location);
     console.log(embedMode);
     if(embedMode.embed){
       embedModeOn = true;
-    }
-    if(embedMode.nochat){
-      chatOn = false;
     }
   }
 
@@ -57,7 +53,7 @@ const Layout = ({ title, children, location }) => {
         <Header siteTitle={title || `Billflow Demo`} previewMode={previewMode} previewModeOn={previewModeOn} />
         }
         {children}
-        {chatOn ? <Intercom appID="btalc5xb" /> : <></> }
+        
       </main>
     </div>
   )

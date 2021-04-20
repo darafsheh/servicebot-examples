@@ -1,7 +1,14 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
+exports.onInitialClientRender = () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get('nochat');
+    if(!myParam){
+        window.Intercom('boot', {
+            app_id: window.IntercomAppId
+        })
+    }
+  
+}
 
-// You can delete this file if you're not using it
+exports.onRouteUpdate = function ({ location }) {
+  window.Intercom('update')
+}
