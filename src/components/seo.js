@@ -66,6 +66,10 @@ function SEO({ description, lang, meta, title, ogimage }) {
           content: ogimage
         },
         {
+          property: `og:image`,
+          content: ogimage
+        },
+        {
           name: `twitter:creator`,
           content: site.siteMetadata?.author || ``,
         },
