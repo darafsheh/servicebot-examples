@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import useServicebotEmbed from "../../hooks/useBillflowBeta"
+import useServicebotEmbed from "../../hooks/useServicebotEmbed"
 
 import { useLocation } from '@reach/router'
 
@@ -11,7 +11,8 @@ const TaxVatDemo = () => {
     const [step2, setStep2] = useState(false);
     const [step3, setStep3] = useState(false);
     const [step4, setStep4] = useState(false);
-    const [billingPage, setBillingPage] = useState(
+    const [billingPage, setBillingPage] = useState({billing_page_id:'XXdbd9DfmASi4ODju51'});
+    /*const [billingPage, setBillingPage] = useState(
         {
             billing_page_id:'O9uBmZ1cHMVxYsOWo9pD', 
             "loader": "3",
@@ -25,7 +26,7 @@ const TaxVatDemo = () => {
                 }
             }
             }
-        });
+        });*/
 
     function setStep1On(){
         setStep1(true);
